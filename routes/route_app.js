@@ -6,7 +6,7 @@ let iconv = require('iconv-lite');
 let dealFn = require('./dealfn.js');
 
 let database = null;
-let maxVoteTimes = 5;
+let maxVoteTimes = 0;
 
 dealFn.readFileData('database.json').then((data) => {
     database = data;
